@@ -6,10 +6,10 @@ You develop the application and API, we bring complete and continuous security t
 
 Know your API and Applications are secure with Apisec – our automated and continuous API security testing platform. 
 
-## How Apisec Free Pen Test works:
+## How Apisec Free Pentest works:
 Apisec functions in the following simple steps.
 
-### Scan API
+### API Scanning
 Provide your  OpenAPI specification URL. Apisec instantly learns your live API composition, including the list of endpoints and operations, and creates an API functionality map.
 
 Apisec automatically creates thousands of attack playbooks to comprehensively and completely test every function of your API. The playbooks address the entire OWASP API Security Top 10 and more, giving you complete coverage.
@@ -19,7 +19,7 @@ Apisec runs non-intrusive scan/playbooks against your APIs to find the vulnerabi
 ### Vulnerabilities Reporting
 The Apisec playbooks are designed to find the trickiest vulnerabilities - business logic flaws, OWASP API top 10, and not just standard security issues. 
 
-APIsec sends PenTest Report with OWASP Coverage, Category wise Test Cases and Vulnerabilities count to the email provided.
+APIsec sends Pentest Report with OWASP Coverage, Category wise Test Cases and Vulnerabilities count to the email provided.
 
 ___
 
@@ -41,7 +41,7 @@ ___
 ```yaml
 - name: Trigger APIsec Free Pen Test
   id: scan
-  uses: apisec-inc/apisec-free-pen-test@latest
+  uses: apisec-inc/apisec-free-pentest@latest
   with:
     oas-url: http://application.apisec.ai:8080/v2/api-docs
     email: xxx@apisec.ai
