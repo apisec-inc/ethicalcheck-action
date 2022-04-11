@@ -14,5 +14,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run:  ${GITHUB_ACTION_PATH}/apisec-run-scan.sh "${{inputs.oas-url}}" "${{ inputs.email }}"  
+    - run:  ${GITHUB_ACTION_PATH}/pentest-script.sh "${{inputs.oas-url}}" "${{ inputs.email }}"  
       shell: bash
