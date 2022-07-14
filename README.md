@@ -43,6 +43,6 @@ ___
   id: scan
   uses: apisec-inc/apisec-free-pentest@latest
   with:
-    oas-url: http://application.apisec.ai:8080/v2/api-docs
+    oas-url: http://netbanking.apisec.ai:8080/v2/api-docs
     email: xxx@apisec.ai
 ```
