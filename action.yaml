@@ -3,7 +3,7 @@ name: 'EthicalCheck'
 description: 'Free & Instant API Penetration Testing Service'
 branding:
   icon: 'shield'  
-  color: 'green'
+  color: 'blue'
 inputs:
   oas-url:
     description: 'The Open API Specification or public Postman collection URL.'
