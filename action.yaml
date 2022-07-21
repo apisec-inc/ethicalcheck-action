@@ -1,6 +1,9 @@
 # action.yml
 name: 'EthicalCheck'
 description: 'Free & Instant API Penetration Testing Service'
+branding:
+  icon: 'shield'  
+  color: 'green'
 inputs:
   oas-url:
     description: 'The Open API Specification or public Postman collection URL.'
