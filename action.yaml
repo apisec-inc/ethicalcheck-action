@@ -1,13 +1,13 @@
 # action.yml
-name: 'APIsec Free Pentest'
-description: 'Continuous, automated, comprehensive API Security Testing'
+name: 'EthicalCheck'
+description: 'Free & Instant API Penetration Testing Service'
 inputs:
   oas-url:
-    description: 'The Open API Specification URL against which the scans will be executed.'
+    description: 'The Open API Specification or public Postman collection URL.'
     required: true
     default: ''
   email:
-    description: 'The email address on which the vulnerabilities report will be sent.'
+    description: 'The email address to which the API penetration test report will be sent.'
     required: true
     default: '' 
  
