@@ -41,7 +41,7 @@ ___
 ```yaml
 - name: EthicalCheck - Free & Instant API Penetration Testing Service
   id: scan
-  uses: apisec-inc/apisec-free-pentest@latest
+  uses: apisec-inc/ethicalcheck-action@latest
   with:
     oas-url: http://netbanking.apisec.ai:8080/v2/api-docs
     email: xxx@apisec.ai
