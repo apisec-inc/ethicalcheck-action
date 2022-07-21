@@ -1,6 +1,9 @@
-[![APIsec](https://cloud.fxlabs.io/assets/images/logo.png)](https://www.apisec.ai/product)
 
-EthicalCheck addresses the critical need to secure APIs before they reach production. EthicalCheck provides the industry’s only free & instant API penetration testing service that uncovers security vulnerabilities and OWASP API list in APIs. Dev relies on EthicalCheck to evaluate every update and release, ensuring that no APIs go to production with vulnerabilities.
+# EthicalCheck
+
+EthicalCheck addresses the critical need to secure APIs before they reach production.
+
+EthicalCheck provides the industry’s only free & instant API penetration testing service that uncovers security vulnerabilities and OWASP API list in APIs. Dev relies on EthicalCheck to evaluate every update and release, ensuring that no APIs go to production with vulnerabilities.
 
 You develop the application and API, we bring complete and continuous security testing to you, accelerating development. 
 
