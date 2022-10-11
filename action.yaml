@@ -13,9 +13,13 @@ inputs:
     description: 'The email address to which the API penetration test report will be sent.'
     required: true
     default: '' 
+  sarif-result-file:  
+    description: 'The path to the sarif format result file'
+    required: false
+    default: ''
  
 runs:
   using: "composite"
   steps:
-    - run:  ${GITHUB_ACTION_PATH}/pentest-script.sh "${{inputs.oas-url}}" "${{ inputs.email }}"  
+    - run:  ${GITHUB_ACTION_PATH}/pentest-script.sh "${{inputs.oas-url}}" "${{ inputs.email }}" "${{ inputs.sarif-result-file }}"
       shell: bash
