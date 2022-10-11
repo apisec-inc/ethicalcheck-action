@@ -40,6 +40,11 @@ Example Postman Collection URL: https://www.getpostman.com/collections/42d092251
 |Default value|`""`|
 --- | ---
 
+### `sarif-result-file`
+**Optional** The name of the sarif format result file. The file is written only if this property is provided.
+|Default value|`""`|
+--- | ---
+
 ## Example (OpenAPI Spec)
 
 ```yaml
@@ -60,4 +65,21 @@ Example Postman Collection URL: https://www.getpostman.com/collections/42d092251
   with:
     oas-url: https://www.getpostman.com/collections/42d092251d3ae0bea4d4
     email: xxx@apisec.ai
+```
+
+### Upload results to GitHub - Code scanning alerts:
+
+```yaml
+- name: EthicalCheck - Free & Automated API Security Testing Service
+  id: scan
+  uses: apisec-inc/ethicalcheck-action@latest
+  with:
+    oas-url: http://netbanking.apisec.ai:8080/v2/api-docs
+    email: xxx@apisec.ai
+    sarif-result-file: "ethicalcheck-results.sarif"
+    
+- name: upload sarif file to repository
+  uses: github/codeql-action/upload-sarif@v1
+  with:
+    sarif_file: ./apisec-results.sarif
 ```
