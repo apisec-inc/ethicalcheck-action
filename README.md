@@ -81,5 +81,5 @@ Example Postman Collection URL: https://www.getpostman.com/collections/42d092251
 - name: upload sarif file to repository
   uses: github/codeql-action/upload-sarif@v1
   with:
-    sarif_file: ./apisec-results.sarif
+    sarif_file: ./ethicalcheck-results.sarif
 ```
