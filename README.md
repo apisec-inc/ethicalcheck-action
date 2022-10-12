@@ -50,7 +50,7 @@ Example Postman Collection URL: https://www.getpostman.com/collections/42d092251
 ```yaml
 - name: EthicalCheck - Free & Automated API Security Testing Service
   id: scan
-  uses: apisec-inc/ethicalcheck-action@latest
+  uses: apisec-inc/ethicalcheck-action@005fac321dd843682b1af6b72f30caaf9952c641
   with:
     oas-url: http://netbanking.apisec.ai:8080/v2/api-docs
     email: xxx@apisec.ai
@@ -61,7 +61,7 @@ Example Postman Collection URL: https://www.getpostman.com/collections/42d092251
 ```yaml
 - name: EthicalCheck - Free & Automated API Security Testing Service
   id: scan
-  uses: apisec-inc/ethicalcheck-action@latest
+  uses: apisec-inc/ethicalcheck-action@005fac321dd843682b1af6b72f30caaf9952c641
   with:
     oas-url: https://www.getpostman.com/collections/42d092251d3ae0bea4d4
     email: xxx@apisec.ai
@@ -72,14 +72,14 @@ Example Postman Collection URL: https://www.getpostman.com/collections/42d092251
 ```yaml
 - name: EthicalCheck - Free & Automated API Security Testing Service
   id: scan
-  uses: apisec-inc/ethicalcheck-action@latest
+  uses: apisec-inc/ethicalcheck-action@005fac321dd843682b1af6b72f30caaf9952c641
   with:
     oas-url: http://netbanking.apisec.ai:8080/v2/api-docs
     email: xxx@apisec.ai
     sarif-result-file: "ethicalcheck-results.sarif"
     
 - name: upload sarif file to repository
-  uses: github/codeql-action/upload-sarif@v1
+  uses: github/codeql-action/upload-sarif@v2
   with:
     sarif_file: ./ethicalcheck-results.sarif
 ```
